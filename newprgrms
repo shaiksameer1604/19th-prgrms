@@ -1,0 +1,51 @@
+1)Calculate the area of triangle,square and rectangle
+
+h=int(input("Enter height of the triangle:"))
+b=int(input("Enter the base of the triangle:"))
+areatri=1/2*(h*b)
+print("Area of triangle is %d",areatri)
+a=int(input("Enter side of square:"))
+areasq=a*a
+print("Area of square is %d",areasq)
+l=int(input("Enter length of rectangle:"))
+b=int(input("Enter breadth if rectangl:"))
+arearec=l*b
+print("Area of rectangle is %d",arearec)
+
+
+
+2)Swap 3 numbers in ascending order
+
+
+a=int(input("Enter 1st number:"))
+b=int(input("Enter 2nd number:"))
+c=int(input("Enter 3rd number:"))
+sum=a+b+c
+low=0
+max=0
+if(a>b and a>c):
+  if(b>c):
+    temp=a
+    a=c
+    c=temp
+  else:
+    temp=a
+    a=b
+    b=c
+    c=temp
+elif(b>a and b>c):
+  if(a>c):
+    temp=b
+    b=a
+    a=c
+    c=temp
+  else:
+    temp=b
+    b=c
+    c=temp
+elif(c>a and c>b):
+  if(a>b):
+    temp=b
+    a=temp
+    b=a
+print(a,b,c)
