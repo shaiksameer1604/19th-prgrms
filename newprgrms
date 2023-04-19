@@ -49,3 +49,21 @@ elif(c>a and c>b):
     a=temp
     b=a
 print(a,b,c)
+
+
+3)Fibonacci series
+
+num=int(input("Enter no of fibonacci series:"))
+a=0
+b=1
+if(num<=2):
+  print("Enter a valid number")
+else:
+  print(a,)
+  print(b,)
+  for i in range(num-2):
+    c=a+b
+    print(c)
+    a=b
+    b=c
+  
