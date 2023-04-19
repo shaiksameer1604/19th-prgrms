@@ -1,6 +1,5 @@
 num=int(input("Enter a number to be reversed:"))
 int sum=0
-int rem
 temp=num
 while(num!=0):
     rem=num%10
